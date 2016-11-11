@@ -1,0 +1,5 @@
+# Logfile created on 2016-11-11 00:30:42 +0000 by logger.rb/54362
+I, [2016-11-11T00:30:42.692263 #3960]  INFO -- : Thin web server (v1.6.4 codename Gob Bluth)
+I, [2016-11-11T00:30:42.692313 #3960]  INFO -- : Maximum connections set to 1024
+I, [2016-11-11T00:30:42.692355 #3960]  INFO -- : Listening on 0.0.0.0:3333, CTRL+C to stop
+I, [2016-11-11T00:31:21.888530 #3960]  INFO -- : Waiting for 3 connection(s) to finish, can take up to 30 sec, CTRL+C to stop now
