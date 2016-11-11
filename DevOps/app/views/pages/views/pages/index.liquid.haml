@@ -1,0 +1,20 @@
+---
+title: Home page
+published: true
+handle: home
+---
+{% extends 'layouts/simple' %}
+
+{% block content/main %}
+.row
+  .col-lg-4
+    {% editable_text first_column %}
+    %h2 Adam Mikeal 
+    %p Director of IT, College of Architecture
+    {% endeditable_text %}
+  .col-lg-4
+    {% editable_text second_column %}
+    %h2 David Sweeney
+    %p Director of IT, Student Affairs
+    {% endeditable_text %}
+{% endblock %}
