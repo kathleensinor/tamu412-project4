@@ -1,0 +1,57 @@
+---
+title: Contact
+
+# true if the page is included in the menu
+listed: true
+
+# true if the page is published
+published: true
+
+# true if the page can be used as a layout for new pages created by the editors
+# is_layout: true
+
+# position among sibling pages
+# position: 1
+
+# sets a redirection to the given url (301)
+# redirect_url: "<url to a page or to a remote url>"
+
+# other unique identifier of this page. To be used with the path_to liquid tag.
+# handle: my-page-handle
+
+# content type that this page is templatizing
+# content_type: "<slug of one of the content types>"
+
+
+# editable_elements:
+#   'some_block/some_slug': "<text>"
+#   'some_block/some_slug': "<relative path to the file under the public/samples folder>"
+---
+{% extends 'layouts/simple' %}
+
+{% block content/main %}
+    %h2 John Brown
+    %p Slack: @jbrown
+    {% endeditable_text %}
+   .col-lg-4
+    {% editable_text second_column %}
+    %h2 Kathleen Sinor
+    %p Slack: @kathleensinor
+    {% endeditable_text %}
+   .col-lg-4
+    {% editable_text third_column %}
+    %h2 Ryan Stankard
+    %p Slack: @ryanstand95
+    {% endeditable_text %}
+   .col-lg-4
+    {% editable_text fourth_column %}
+    %h2 Brent Wallingford
+    %p Slack: @ brentwallingford
+    {% endeditable_text %}
+   .col-lg-4
+    {% editable_text fifth_column %}
+    %h2 Leon Brandon
+    %p Slack: @leonbrandon21
+    {% endeditable_text %}
+
+{% endblock %}
