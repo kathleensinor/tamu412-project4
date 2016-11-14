@@ -1,57 +1,35 @@
+  GNU nano 2.2.6            File: contact.liquid
+
 ---
 title: Contact
-
-# true if the page is included in the menu
+slug: contact
+position: 99
 listed: true
-
-# true if the page is published
 published: true
-
-# true if the page can be used as a layout for new pages created by the editors
-# is_layout: true
-
-# position among sibling pages
-# position: 1
-
-# sets a redirection to the given url (301)
-# redirect_url: "<url to a page or to a remote url>"
-
-# other unique identifier of this page. To be used with the path_to liquid tag.
-# handle: my-page-handle
-
-# content type that this page is templatizing
-# content_type: "<slug of one of the content types>"
-
-
-# editable_elements:
-#   'some_block/some_slug': "<text>"
-#   'some_block/some_slug': "<relative path to the file under the public/samples folder>"
+is_layout: false
+editable_elements:
+  content/main/first_column: |-
+    <h2>Heading #1</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, t$
+  content/main/second_column: |-
+    <h2>Heading #2</h2>
+          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, t$
+  content/main/third_column: |-
+    <h2>Heading #3</h2>
+          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, eges$
+  content/header/jumbotron: "<p>\r\n\r\n</p><h1 class=\"wysiwyg-text-align-cent$
+    Management 412</h1><h1 class=\"wysiwyg-text-align-center\">\r\n      </h1><$
+    and the Modern IT Team</p>\r\n\r\n<p></p>"
+  content/main/body: <p class="wysiwyg-text-align-center"><strong>John Brown&nb$
+    class="wysiwyg-text-align-center">Slack - jbrown<br></p><p class="wysiwyg-t$
+    Dees</strong><br></p><p class="wysiwyg-text-align-center">Slack - aarondees$
+    class="wysiwyg-text-align-center"><strong>Brent Wallingford</strong><br></p$
+    class="wysiwyg-text-align-center">Slack - brentwallingford<br></p><p class=$
+    Sinor</strong><br></p><p class="wysiwyg-text-align-center">Slack - kathleen$
+    class="wysiwyg-text-align-center"><strong>Leon Brandon</strong><br></p><p c$
+    - leaonbrandon21<br></p><p class="wysiwyg-text-align-center"><strong>Ryan S$
+    class="wysiwyg-text-align-center">Slack - ryanstankard<br></p>
 ---
-{% extends 'layouts/simple' %}
+{% extends "layouts/simple" %}
 
-{% block content/main %}
-    %h2 John Brown
-    %p Slack: @jbrown
-    {% endeditable_text %}
-   .col-lg-4
-    {% editable_text second_column %}
-    %h2 Kathleen Sinor
-    %p Slack: @kathleensinor
-    {% endeditable_text %}
-   .col-lg-4
-    {% editable_text third_column %}
-    %h2 Ryan Stankard
-    %p Slack: @ryanstand95
-    {% endeditable_text %}
-   .col-lg-4
-    {% editable_text fourth_column %}
-    %h2 Brent Wallingford
-    %p Slack: @ brentwallingford
-    {% endeditable_text %}
-   .col-lg-4
-    {% editable_text fifth_column %}
-    %h2 Leon Brandon
-    %p Slack: @leonbrandon21
-    {% endeditable_text %}
 
-{% endblock %}
