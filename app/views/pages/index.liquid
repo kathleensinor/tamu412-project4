@@ -1,0 +1,69 @@
+---
+title: Home page
+slug: index
+handle: home
+position: 0
+listed: false
+published: true
+is_layout: false
+editable_elements:
+  content/main/first_column: "<h2><strong>Course Objectives</strong></h2>\r\n      <p>Upon
+    completion of the course, students will have a basic understanding of the concepts
+    and practices behind the DevOps model of IT service delivery. This includes: classifying
+    types of work within an IT unit; systems automation and infrastructure as code;
+    continuous integration/delivery of software; and the importance of communication
+    and culture within an IT group. Additionally, students will have acquired hands-on
+    experience with a variety of tools commonly used in DevOps environments, such
+    as version control systems, virtual machines and containerization systems, infrastructure
+    automation tools, and systems monitoring and reporting tools. The course will
+    provide the opportunity to work in teams to deliver modern IT services, and experience
+    the DevOps model of service delivery from the inside.</p>"
+  content/main/second_column: "<h2 class=\"wysiwyg-text-align-center\"><strong>Adam
+    Mikeal</strong></h2><p class=\"wysiwyg-text-align-center\"><em>Director of IT,
+    College of Architecture</em><span class=\"Apple-converted-space\">&nbsp;</span><br><a
+    href=\"mailto:adam@tamu.edu\" title=\"Link: mailto:adam@tamu.edu\">adam@tamu.edu</a><span
+    class=\"Apple-converted-space\">&nbsp;</span><br>(979) 862-3396<span class=\"Apple-converted-space\">&nbsp;</span><br><strong>Office:</strong><span
+    class=\"Apple-converted-space\">&nbsp;</span>Langford A122<span class=\"Apple-converted-space\">&nbsp;</span><br><strong>Office
+    hours:</strong><span class=\"Apple-converted-space\">&nbsp;</span>T 10—12 &nbsp;
+    F 1:30—3<span class=\"Apple-converted-space\">&nbsp;</span><em>or by<span class=\"Apple-converted-space\">&nbsp;</span>appt</em></p><p><em></em>\r\n\r\n
+    </p>"
+  content/main/third_column: "<h2 class=\"wysiwyg-text-align-center\"><strong>David
+    Sweeney</strong><span class=\"Apple-converted-space\">&nbsp;</span></h2><p class=\"wysiwyg-text-align-center\"><em>Director
+    of IT, Division of Student Affairs</em><span class=\"Apple-converted-space\">&nbsp;</span><br><a
+    href=\"mailto:sweeney@tamu.edu\" title=\"Link: mailto:sweeney@tamu.edu\">sweeney@tamu.edu</a><span
+    class=\"Apple-converted-space\">&nbsp;</span><br>(979) 458-9201<span class=\"Apple-converted-space\">&nbsp;</span><br><strong>Office:</strong><span
+    class=\"Apple-converted-space\">&nbsp;</span>John J.<span class=\"Apple-converted-space\">&nbsp;</span>Koldus<span
+    class=\"Apple-converted-space\">&nbsp;</span>233X<span class=\"Apple-converted-space\">&nbsp;</span><br><strong>Office
+    hours:</strong><span class=\"Apple-converted-space\">&nbsp;</span>M 4—6 or by<span
+    class=\"Apple-converted-space\">&nbsp;</span>appt</p><p>\r\n\r\n</p>"
+  content/header/jumbotron: "<h1 class=\"wysiwyg-text-align-center\">Technology Management
+    412</h1><h1 class=\"wysiwyg-text-align-center\">\r\n      </h1><p class=\"wysiwyg-text-align-center\">DevOps
+    and the Modern IT Team</p>"
+---
+{% extends 'layouts/simple' %}
+
+{% block content/main %}
+
+<div class="row">
+  <div class="col-lg-4">
+    {% editable_text first_column %}
+      <h2>Heading #1</h2>
+      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+    {% endeditable_text %}
+  </div>
+  <div class="col-lg-4">
+    {% editable_text second_column %}
+      <h2>Heading #2</h2>
+      <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+    {% endeditable_text %}
+ </div>
+  <div class="col-lg-4">
+    {% editable_text third_column %}
+      <h2>Heading #3</h2>
+      <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+    {% endeditable_text %}
+  </div>
+</div>
+
+{% endblock %}
+
